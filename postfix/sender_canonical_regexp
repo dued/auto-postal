@@ -1,0 +1,15 @@
+# sender_canonical_regexp
+# Este archivo cambiará el correo electrónico de la dirección 
+# usando expresiones regulares
+#
+# 
+# Si va a definir dominios canónicos y sustitución de dominios no canónicos
+# Entonces eejecute:
+#    postmap /etc/postfix/sender_canonical_regexp
+#    systemctl restart postfix.service
+#
+# Ejemplo 1: Dominio canónico (no cambiar de dirección)
+# /^(.+)@ejemplo.com$/ ${1}@ejemplo.com
+#
+# Sample 2: Dominio no canónico (cambio de dirección usando dominio canónico)
+# /^(.+)@(.+)$/ noreply+${1}+${2}@ejemplo.com

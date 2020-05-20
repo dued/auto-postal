@@ -1,0 +1,4 @@
+# sasl_passwd
+# Este archivo define user:pass para iniciar una sesión en el hosts de retrasmisión SMTP
+#
+# SMTP_RELAY_HOST USERNAME:PASSWORD

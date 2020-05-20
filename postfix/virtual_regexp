@@ -1,0 +1,10 @@
+# virtual_regexp
+# Este archivo cambiará el correo electrónico a la dirección usando expresiones regulares
+#
+# Elimine el comentario de esta línea para enviar todo el correo electrónico
+# a una dirección de correo electrónico
+# Luego ejecute:
+#    postmap /etc/postfix/virtual_regexp
+#    systemctl restart postfix.service
+#
+# /.+@.+/ catchall@ejemplo.com

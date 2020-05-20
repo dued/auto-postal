@@ -1,0 +1,9 @@
+# virtual
+# Este archivo cambiará el correo electrónico a la dirección
+#
+# Para Agregar una línea por correo electrónico a la dirección para cambiar
+# Ejecuta:
+#    postmap /etc/postfix/virtual
+#    systemctl restart postfix.service
+#
+# TO_ADDRESS    CHANGED_TO_ADDRESS
